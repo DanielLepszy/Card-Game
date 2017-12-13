@@ -1,0 +1,172 @@
+body
+{
+    background-image:url('Pictures/MainBackground1920x1080.png');
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    background-repeat:no-repeat;
+}
+.BorderFirst
+{
+    position:absolute;
+    top:5px;
+    left:5px;
+    animation: rotation 7s infinite linear ;
+}
+
+.BorderSecond
+{
+    position:absolute;
+    top:5px;
+    left:150px;  
+    animation: rotation 7s  infinite linear ;
+}
+.BorderThird
+{
+    position:absolute;
+    top:5px;
+    left:295px;  
+    animation: rotation 7s  infinite linear ;
+}
+.Contact
+{
+    position:absolute;
+    top:5px;
+    left:5px;
+    display: inline;
+}
+.FacebookLogo
+{
+    position:absolute;
+    top:35px;
+    left:30px;  
+}
+
+.TwitterLogo
+{
+    position:absolute;
+    top:35px;
+    left:182px; 
+}
+.InstagramLogo
+{
+    position:absolute;
+    top:37px;
+    left:328px;   
+}
+.GwentLogo
+{
+    position:fixed;
+    top:10%;
+    left:40%;  
+    margin-bottom:5%;  
+}
+.StartGame
+{
+    position:fixed;
+    top:40%;
+    left:37.5%;  
+}
+.SilverAnimation
+{
+    position: fixed;
+    top:40%;
+    left:37.5%;
+    width:1%;
+    height: 80px;
+}
+.StartGame:hover .SilverAnimation
+{   
+    background-image: url('Pictures/btn.40.png');
+    width:400px;
+    transition: 0.5s linear;
+    opacity: 1;
+}
+.TagInfo
+{
+    position: absolute;
+    top:70%;
+    left: 20%;
+    margin-left:50px;
+}
+.AllInBox
+{
+    width: 520%;
+    height:0px;
+    border: 25px solid transparent;
+    border-image: url('Pictures/Infoborder.png') 30 10 stretch; 
+    border-image-outset: 10px;
+    background:rgba(0,0,0, .75);
+    border-radius: 3%;
+    opacity: 0.0;
+    margin-left:25px;
+    text-align: center;
+    color: wheat;
+    transition: all 0.8s ease-in;
+}
+
+
+.TagInfo:hover .AllInBox    
+{
+    opacity: 1;
+    height:65%;
+    transition: all 0.8s ease-out;
+}
+
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+@media screen and (min-width:0px) and (max-width: 720px)  {
+
+    .BorderFirst{ display:none;}
+    .BorderSecond{ display:none;}
+    .BorderThird{ display:none;}
+    .FacebookLogo{display:none;}
+    .TwitterLogo{display:none;}
+    .InstagramLogo{display:none;}
+    .GwentLogo{left:25%;  margin-bottom:15%;}
+    .StartGame {left:18%;}
+    .SilverAnimation {left:18%;}
+    .TagInfo{display: block; position:absolute; left:5% }
+    .AllInBox{left:250%; width: 350px;}
+    .TagInfo:hover .AllInBox{height:120px;}
+}
+@media screen and (min-width:721px) and (max-width: 920px)  {
+
+    .BorderThird{display:none;}
+    .InstagramLogo{display:none;}
+    .GwentLogo{left:36%;}
+    .StartGame{left:33.5%; }
+    .SilverAnimation{left:33.5%;}
+    .TagInfo{display: block;position:fixed;}
+    .AllInBox{width: 350px;}
+    .TagInfo:hover .AllInBox{height:120px;}
+} 
+@media screen and (min-width:921px) and (max-width:1280px)  {
+
+    .GwentLogo{left:41%;}
+    .StartGame{left:39.5%; }
+    .SilverAnimation{left:39.5%;}
+    .TagInfo{display: block;position:fixed;left:24%;}
+    .AllInBox{width: 420px;}
+    .TagInfo:hover .AllInBox{height:120px;}
+}
+@media screen and (min-width:1281px) and (max-width:1920px)  {
+
+    .StartGame{left:37.5%; }
+    .SilverAnimation{left:37.5%;}
+    .TagInfo{display: block;position:fixed;left:21%;}
+    .AllInBox{width: 820px; font-size: 20px;}
+    .TagInfo:hover .AllInBox{height:120px;}
+}
+    

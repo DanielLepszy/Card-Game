@@ -1,0 +1,163 @@
+body
+{
+
+    
+    background-image:url('Pictures/MainBackground1920x1080.png');
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    background-repeat:no-repeat;
+    background-size:content;
+    background-position: center top;
+
+}
+article
+{
+    
+    margin-top:1px;
+    display: block;
+    margin-left: 75%;
+
+}
+.logo
+{
+    position: relative;
+    margin-left:114%;
+    margin-top:-2%;
+}
+#board
+{
+   position:relative;
+
+    width:600px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    font-size: 25px;
+    color: gold;
+    
+ 
+}
+.Cards
+{
+    width:125px;
+    height:175px;
+    display: inline-block;
+    margin:3px;
+    background-image: url('Cards/flippedFaction2.png');
+    border:1.3px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    filter: brightness(93%);
+    transition: all.3s ease-out;
+}
+.Cards:hover
+{
+    filter: brightness(115%);
+}
+.CardsActive
+{
+    width:125px;
+    height:175px;
+    display: inline-block;
+    margin:3px;
+    background-image: url('Cards/flippedFaction2.png');
+    border:1.3px solid black;
+    border-radius: 2px;
+    cursor: default;
+    filter: brightness(105%);
+    transition: all.3s ease-out;
+}
+.Scores
+{
+    position: absolute;
+   font-size: 25px;
+   color:white;
+   text-align: left;
+   margin-left:20%;
+   margin-top:50%;
+   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1537px) and (max-width: 1921px) {
+    article
+    {
+        margin-top:1px;
+        display: block;
+        margin-left: 115%;
+    }
+    .logo
+    {
+        position: static;
+        margin-top:2%;
+        margin-left:155%;
+    }
+}
+@media screen and (min-width: 1281px) and (max-width: 1536px) { 
+    article
+    {
+        margin-top:1px;
+        display: block;
+        margin-left: 80%;
+    }
+    .logo
+    {
+        position: static;
+        margin-top:-2%;
+        margin-left:120%;
+    }
+}
+@media screen and (min-width: 921px) and (max-width: 1280px) {
+    article
+    {
+        margin-top:1px;
+        display: block;
+        margin-left:65%;
+    }
+    .logo
+    {
+        position: static;
+        margin-top:-2%;
+        margin-left:105%;
+    }
+}
+@media screen and (min-width: 721px) and (max-width: 920px) {  
+    article
+    {
+        margin-top:1px;
+        display: block;
+        margin-left: 20%;
+    }
+    .logo
+    {
+        position: static;
+        margin-top:-2%;
+        margin-left:60%;
+    }
+    .Scores
+    {
+        margin-left:10%;
+        margin-top:10%;
+    }
+}
+@media screen and (min-width:0px) and (max-width: 720px) {  
+    article
+    {
+        margin-top:1px;
+        display: block;
+        margin-left: 20%;
+    }
+    .logo
+    {
+        position: static;
+        margin-top:-2%;
+        margin-left:60%;
+    }
+    .Scores
+    {
+        margin-left:5%;
+        margin-top:10%;
+    }
+}

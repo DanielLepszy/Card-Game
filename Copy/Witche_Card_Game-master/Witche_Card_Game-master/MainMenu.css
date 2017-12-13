@@ -1,0 +1,141 @@
+body
+{
+    background-image:url('Pictures/MainBackground.jpg');
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    background-repeat:no-repeat;
+    background-size:content;
+    background-position: center top;
+
+}
+.BorderFirst
+{
+    position:absolute;
+    top:5px;
+    left:5px;
+    animation: rotation 7s infinite linear ;
+    
+}
+
+.BorderSecond
+{
+    position:absolute;
+    top:5px;
+    left:150px;  
+    animation: rotation 7s  infinite linear ;
+}
+.BorderThird
+{
+    position:absolute;
+    top:5px;
+    left:295px;  
+    animation: rotation 7s  infinite linear ;
+    
+}
+.Contact
+{
+    position:absolute;
+    top:5px;
+    left:5px;
+    display: inline;
+}
+.FacebookLogo
+{
+    position:absolute;
+    top:35px;
+    left:30px;  
+}
+
+.TwitterLogo
+{
+    position:absolute;
+    top:35px;
+    left:182px; 
+}
+.InstagramLogo
+{
+    position:absolute;
+    top:37px;
+    left:328px;   
+}
+.GwentLogo
+{
+    position:fixed;
+    top:10%;
+    left:40%;  
+   
+}
+.StartGame
+{
+    
+    position:fixed;
+    top:40%;
+    left:37.5%;  
+}
+.SilverAnimation
+{
+    position: fixed;
+    top:40%;
+    left:37.5%;
+    width:1%;
+    height: 80px;
+    
+}
+.StartGame:hover .SilverAnimation
+{   
+    background-image: url('Pictures/btn.40.png');
+    width:26%;
+    transition: 0.5s linear;
+    opacity: 1;
+
+}
+.TagInfo
+{
+    position: absolute;
+    top:70%;
+    left: 20%;
+    margin-left:50px;
+
+}
+.AllInBox
+{
+    position:absolute;
+    top:2%;
+    left:240%;
+    width: 520%;
+    height:0%;
+    border: 25px solid transparent;
+    border-image: url('Pictures/Infoborder.png') 30 10 stretch; 
+    border-image-outset: 10px;
+    background:rgba(0,0,0, .75);
+    border-radius: 3%;
+    opacity: 0.0;
+    margin-left:25px;
+    text-align: center;
+    color: wheat;
+    transition:  0.8s ease-in;
+    
+}
+
+
+.TagInfo:hover .AllInBox    
+{
+    opacity: 1;
+    height:65%;
+    transition:  0.8s ease-out;
+}
+
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
